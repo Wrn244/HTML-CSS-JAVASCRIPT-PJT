@@ -12,6 +12,7 @@
       body {
         font-family: "Sono", sans-serif;
         background-color: blue;
+        background-image: linear-gradient(blue, black);
       }
       .pricing-container {
         display: flex;
@@ -69,6 +70,10 @@
       @media (max-width: 1250px) {
         .pricing-container {
           flex-direction: column;
+        }
+        body {
+          background-color: black;
+          background-image: linear-gradient(black, blue);
         }
       }
     </style>
