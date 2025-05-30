@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+      }
+      .red {
+        background-color: #e72f24; /* Red */
+      }
+      .blue {
+        background-color: #004592; /* Blue */
+      }
+      .yellow {
+        background-color: #f9d01e; /* Yellow */
+      }
+      .white {
+        background-color: #f0f1ec; /* White */
+      }
+      .black {
+        background-color: #232629; /* Black */
+      }
+      .container {
+        width: 748px;
+        height: 746px;
+        display: grid;
+        background-color: black;
+        border-bottom: #f0f1ec 10px solid;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 20px;
+        width: 748px;
+        height: 748px;
+        gap: 9px;
+        border-bottom: 10px solid white;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+      }
+      #w1 {
+        grid-column: span 3;
+      }
+      #w2 {
+        grid-row: span 2;
+      }
+      #w3 {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      #w4 {
+        grid-row-start: 4;
+      }
+      .yellow {
+        grid-row-start: 4;
+      }
+      .black {
+        grid-row-start: 4;
+      }
+      #w5 {
+        grid-row: span 2;
+      }
+      .blue {
+        border-bottom: 10px solid black;
+      }
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="grid">
+        <div class="cell red"></div>
+        <div class="cell white" id="w1"></div>
+        <div class="cell white" id="w2"></div>
+        <div class="cell white" id="w3"></div>
+        <div class="cell blue"></div>
+        <div class="cell white" id="w4"></div>
+        <div class="cell yellow"></div>
+        <div class="cell black"></div>
+        <div class="cell white" id="w5"></div>
+      </div>
+    </div>
+  </body>
+</html>
